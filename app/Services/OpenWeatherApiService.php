@@ -31,8 +31,8 @@ class OpenWeatherApiService
         $response = json_decode($body->getContents());
 
         return [
-            'city' => $response->city,
-            'weather_list' => $response->list,
+            'location' => $response->city,
+            'weathers' => $response->list,
         ];
     }
 }
